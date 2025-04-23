@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Todo List</h1>
+        </div>
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button class="add-btn">Add Task</button>
+        </div>
+        <div class="filters">
+            <button onclick="renderTodos('all')" class="active">All</button>
+            <button onclick="renderTodos('completed')">Completed</button>
+            <button onclick="renderTodos('pending')">Pending</button>
+        </div>
+        <ul class="todo-list">
+            <!-- Todo items will be added dynamically -->
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
